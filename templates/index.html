@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processador de Faturas Vencidas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+        
+        .info-box {
+            background-color: #e1f5fe;
+            border-left: 4px solid #03a9f4;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .error-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .success-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        form {
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        
+        button, .btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        button:hover, .btn:hover {
+            background-color: #45a049;
+        }
+        
+        .btn-primary {
+            background-color: #4caf50;
+        }
+        
+        .btn-secondary {
+            background-color: #3498db;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #2980b9;
+        }
+        
+        .actions {
+            margin: 20px 0;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading-spinner {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .progress-container {
+            margin: 20px 0;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            height: 25px;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 4px;
+            width: 0%;
+            transition: width 0.3s ease;
+            position: relative;
+        }
+        
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .table-container {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            margin: 0 5px;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .radio-group {
+            display: flex;
+            margin: 15px 0;
+            gap: 20px;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .radio-option:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .radio-option.selected {
+            background-color: #e1f5fe;
+            border-color: #03a9f4;
+        }
+        
+        .radio-option input {
+            margin-right: 10px;
+        }
+        
+        .api-selector {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .api-selector h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Processador de Faturas Vencidas</h1>
+        
+        {% if error %}
+        <div class="error-box">
+            <p><strong>Erro:</strong> {{ error }}</p>
+        </div>
+        {% endif %}
+        
+        {% if sucesso %}
+        <div class="success-box">
+            <p><strong>Processamento concluído com sucesso!</strong></p>
+            <p>O arquivo CSV com os resultados foi gerado.</p>
+        </div>
+        
+        <div class="actions">
+            <a href="{{ download_url }}" class="btn btn-secondary">Baixar CSV Gerado</a>
+            <a href="/" class="btn">Processar Novo Arquivo</a>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Clientes Processados</div>
+                <div class="stat-value">{{ num_processados }}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Faturas Encontradas</div>
+                <div class="stat-value">{{ num_encontrados }}</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Sem Faturas Vencidas</div>
+                <div class="stat-value">{{ clientes_sem_faturas|length }}</div>
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if not sucesso %}
+        <div class="info-box" id="instrucoes">
+            <p><strong>Instruções:</strong></p>
+            <ul>
+                <li>Faça upload de um arquivo CSV contendo os códigos dos clientes</li>
+                <li>O arquivo deve ter pelo menos a coluna <strong>codigo_cliente</strong></li>
+                <li>Se disponível, inclua uma coluna <strong>TelefoneCorrigido</strong> com os números de telefone</li>
+                <li>O sistema irá buscar as faturas vencidas mais antigas para cada cliente</li>
+                <li>O resultado será um arquivo CSV contendo as informações solicitadas</li>
+            </ul>
+        </div>
+        
+        <div class="warning-box">
+            <p><strong>Atenção para arquivos grandes:</strong></p>
+            <ul>
+                <li>Para arquivos com muitos clientes (mais de 100), o processamento será feito em lotes</li>
+                <li>O processamento pode demorar vários minutos</li>
+                <li>Não feche a página até que o download do arquivo seja iniciado</li>
+                <li>Se ocorrer timeout, tente processar o arquivo em partes menores</li>
+            </ul>
+        </div>
+        
+        <form method="POST" enctype="multipart/form-data" id="processar-form">
+            <div class="api-selector">
+                <h3>Selecione a API Hubsoft para consulta:</h3>
+                <div class="radio-group">
+                    <label class="radio-option {% if api_selecionada == 'megalink' %}selected{% endif %}">
+                        <input type="radio" name="hubsoft_api" value="megalink" {% if api_selecionada == 'megalink' %}checked{% endif %} onchange="this.form.submit()">
+                        MegaLink Telecom
+                    </label>
+                    <label class="radio-option {% if api_selecionada == 'bjfibra' %}selected{% endif %}">
+                        <input type="radio" name="hubsoft_api" value="bjfibra" {% if api_selecionada == 'bjfibra' %}checked{% endif %} onchange="this.form.submit()">
+                        BJ Fibra
+                    </label>
+                </div>
+                <p><strong>API atualmente selecionada:</strong> {% if api_selecionada == 'megalink' %}MegaLink Telecom{% else %}BJ Fibra{% endif %}</p>
+            </div>
+
+            <div class="form-group">
+                <label for="file">Selecione o arquivo CSV:</label>
+                <input type="file" id="file" name="file" accept=".csv" required>
+            </div>
+            <button type="submit">Processar</button>
+        </form>
+        {% endif %}
+        
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p><strong>Processando arquivo...</strong></p>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress-text" id="progress-text">0%</div>
+                </div>
+            </div>
+            
+            <p id="status-text">Processando clientes em lotes...</p>
+            <p>Este processo pode demorar vários minutos, dependendo do tamanho do arquivo.</p>
+            <p>Por favor, não feche esta página.</p>
+        </div>
+        
+        {% if clientes_sem_faturas and clientes_sem_faturas|length > 0 %}
+        <h2>Clientes sem faturas vencidas</h2>
+        <p>Os seguintes clientes foram processados, mas não possuem faturas vencidas:</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for cliente in clientes_sem_faturas %}
+                    <tr>
+                        <td>{{ cliente.codigo }}</td>
+                        <td>{{ cliente.nome }}</td>
+                        <td>{{ cliente.telefone }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+    
+    <script>
+        // Função para atualizar o progresso
+        function atualizarProgresso() {
+            fetch('/progresso')
+                .then(response => response.json())
+                .then(data => {
+                    const porcentagem = data.porcentagem;
+                    const progressBar = document.getElementById('progress-bar');
+                    const progressText = document.getElementById('progress-text');
+                    const statusText = document.getElementById('status-text');
+                    
+                    // Atualizar a barra de progresso
+                    progressBar.style.width = porcentagem + '%';
+                    progressText.textContent = porcentagem + '%';
+                    
+                    // Atualizar texto de status
+                    statusText.textContent = `Processando clientes em lotes... (${data.processados} de ${data.total})`;
+                    
+                    // Continuar atualizando se não estiver completo
+                    if (porcentagem < 100) {
+                        setTimeout(atualizarProgresso, 1000);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao atualizar progresso:', error);
+                });
+        }
+        
+        // Destaque para a opção de rádio selecionada
+        document.querySelectorAll('.radio-option input').forEach(input => {
+            input.addEventListener('change', function() {
+                document.querySelectorAll('.radio-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                this.closest('.radio-option').classList.add('selected');
+            });
+        });
+        
+        document.getElementById('processar-form').addEventListener('submit', function(e) {
+            // Só mostrar o loading se tiver um arquivo selecionado
+            if (document.getElementById('file').files.length > 0) {
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('instrucoes').style.display = 'none';
+                
+                // Iniciar o monitoramento de progresso
+                setTimeout(atualizarProgresso, 1000);
+            }
+            
+            // Não impedir o envio do formulário
+            return true;
+        });
+    </script>
+</body>
+</html> 

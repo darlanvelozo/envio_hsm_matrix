@@ -1,0 +1,1469 @@
+{
+    "status": "success",
+    "msg": "Dados consultados com sucesso",
+    "faturas": [
+        {
+            "id_fatura": 2065145,
+            "quitado": false,
+            "status": "vencido",
+            "nosso_numero": "238912",
+            "nosso_numero_dv": "109/00238912-5",
+            "linha_digitavel": "34191.09008 23891.258842 04937.490003 2 10620000008990",
+            "codigo_barras": "34192106200000089901090023891258840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/c52bd683-f6db-4dd6-bd80-06bceb1bdb585204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***6304B375",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/8247f376f66d9096c78f6efc40a41035369afccb92df4439aafa0c758859320663db0422c9dc4c4a64",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065145,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/04/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252206,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-04-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": 469492,
+                        "modelo": "telecom"
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065146,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238913",
+            "nosso_numero_dv": "109/00238913-3",
+            "linha_digitavel": "34191.09008 23891.338842 04937.490003 1 10920000008990",
+            "codigo_barras": "34191109200000089901090023891338840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/1a8c2fb7-c462-4bbb-a10c-020d1c3dc6c95204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***6304D0AF",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/0cd43ad8a91916c347848e212262e576263763368d64b2644490d04a538f3320f26f67c2e53eca7f94",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065146,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/05/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252207,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-05-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065147,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238914",
+            "nosso_numero_dv": "109/00238914-1",
+            "linha_digitavel": "34191.09008 23891.418842 04937.490003 4 11230000008990",
+            "codigo_barras": "34194112300000089901090023891418840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/3069ae89-4e34-41e2-a07c-1e69db6c8be75204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***6304A226",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/df400597f1d1f840505fab7d26ff97c0268cbf32fe5618c058a799fafb512c2a5118a03ea584c49799",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065147,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/06/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252208,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-06-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065148,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238915",
+            "nosso_numero_dv": "109/00238915-8",
+            "linha_digitavel": "34191.09008 23891.588842 04937.490003 6 11530000008990",
+            "codigo_barras": "34196115300000089901090023891588840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/f235e0d0-a631-494c-a66b-7584f7603b1e5204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***63045EB2",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/2ffbf1c8b0516c90259d9b42ea26892dd3080351165eb76791fbe53101a25908a40f71ec368fec7997",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065148,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/07/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252209,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-07-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065149,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238916",
+            "nosso_numero_dv": "109/00238916-6",
+            "linha_digitavel": "34191.09008 23891.668842 04937.490003 1 11840000008990",
+            "codigo_barras": "34191118400000089901090023891668840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/263bc582-ee97-474e-b39e-5340e1448f675204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***63048E24",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/18bc0f59150e6a1cde762cfaf2bd443a0461e09020afb4a5fdfd7032fe40e5c6e0a54169c78712ed46",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065149,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/08/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252210,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-08-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065150,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238917",
+            "nosso_numero_dv": "109/00238917-4",
+            "linha_digitavel": "34191.09008 23891.748842 04937.490003 3 12150000008990",
+            "codigo_barras": "34193121500000089901090023891748840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/da643995-72c1-42c0-9cf2-15015726b3765204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***63047493",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/db8cac7926b4c7f4c44ba747193323748748e31fbb99a8b753f9b30984831e76d546ac6773ecfde063",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065150,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/09/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252211,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-09-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065151,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238918",
+            "nosso_numero_dv": "109/00238918-2",
+            "linha_digitavel": "34191.09008 23891.828842 04937.490003 2 12450000008990",
+            "codigo_barras": "34192124500000089901090023891828840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/a7093493-0b83-49ae-8fb0-e8daa52960a25204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***630499AE",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/4522b64082374417dde24450b18eb9f60848565e9237810374d7d4199eba3afe9f1b45d034b6fae3f9",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065151,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/10/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252212,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-10-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065152,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238919",
+            "nosso_numero_dv": "109/00238919-0",
+            "linha_digitavel": "34191.09008 23891.908842 04937.490003 7 12760000008990",
+            "codigo_barras": "34197127600000089901090023891908840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/4889bff8-c696-4700-b62b-502c9a3c5df85204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***6304D0C3",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/ae63f31a9927fd73bda0d7eb9137f31687e228062c1239f7c5308bd5597c18ae06ab928e33209d5851",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065152,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/11/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252213,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-11-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065153,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238920",
+            "nosso_numero_dv": "109/00238920-8",
+            "linha_digitavel": "34191.09008 23892.088842 04937.490003 5 13060000008990",
+            "codigo_barras": "34195130600000089901090023892088840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/0c5a48ec-9cc1-4c4c-b9b4-67e1bcf6cf3c5204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***6304F61F",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/9adddb58ae40ad4b916eb90b6a4c5c3101a493ffc89342f5912214f1030bcb0b7a9ba547390fa8e4ab",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065153,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/12/2025",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252214,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2025-12-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065154,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238921",
+            "nosso_numero_dv": "109/00238921-6",
+            "linha_digitavel": "34191.09008 23892.168842 04937.490003 1 13370000008990",
+            "codigo_barras": "34191133700000089901090023892168840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/8da59a87-3649-4ae2-897b-42cd2a99f48d5204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***63040B20",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/6977d17194d9dbaa48e884b756c14f6bbdd3aa6f941886367ce8ae35f796a49c2a708d58394a931df4",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065154,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/01/2026",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252215,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2026-01-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id_fatura": 2065155,
+            "quitado": false,
+            "status": "aguardando",
+            "nosso_numero": "238922",
+            "nosso_numero_dv": "109/00238922-4",
+            "linha_digitavel": "34191.09008 23892.248842 04937.490003 4 13680000008990",
+            "codigo_barras": "34194136800000089901090023892248840493749000",
+            "pix_copia_cola": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/43990118-0f85-4d55-a75b-2859b8aec9115204000053039865802BR5920MEGALINK INFORMATICA6008FLORIANO62070503***63048BDB",
+            "link": "https://api.megalinktelecom.hubsoft.com.br/pdf/fatura/9109ff0f81660983322a17ab39ec99f99cc19b7a6c5458bfa8197282195208916d06e5904d669d9267",
+            "agencia_codigo_beneficiario": "8840 / 49374-9",
+            "beneficiario": "MEGA TELEINFORMATICA LTDA / CNPJ: 11.408.142/0001-09",
+            "numero_documento": 2065155,
+            "especie": "DM",
+            "especie_dinheiro": "R$",
+            "aceite": "N",
+            "local_pagamento": "PAGÁVEL EM QUALQUER BANCO ATÉ O VENCIMENTO",
+            "carteira": "109",
+            "tipo_cobranca": "boleto_bancario",
+            "valor": 89.9,
+            "valor_pago": null,
+            "data_vencimento": "25/02/2026",
+            "data_cadastro": "07/03/2025",
+            "data_pagamento": null,
+            "data_documento": "13/05/2025",
+            "data_processamento": "13/05/2025",
+            "empresa": {
+                "documento": "11408142000109",
+                "nome_razaosocial": "MEGA TELEINFORMATICA LTDA",
+                "nome_fantasia": "MEGALINK - MATRIZ"
+            },
+            "detalhamento": [
+                {
+                    "id_cobranca": 2252216,
+                    "descricao": "Serviço de Comunicação e Multimídia",
+                    "valor": 89.9,
+                    "valor_original": 89.9,
+                    "data_vencimento": "2026-02-25",
+                    "status": "Aguardando",
+                    "valor_desconto": 0,
+                    "valor_pago": 0,
+                    "data_pagamento": null,
+                    "nota_fiscal": {
+                        "id_nota": null,
+                        "modelo": null
+                    },
+                    "desconto_cobranca": [],
+                    "desconto_promocional_cobranca": [],
+                    "composicao": []
+                }
+            ],
+            "cliente": {
+                "codigo_cliente": 24771,
+                "nome_razaosocial": "GRACILENE NERI DA PENHA LULA",
+                "cpf_cnpj": "98889125187",
+                "servico": {
+                    "id_cliente_servico": 80387,
+                    "numero_plano": 1,
+                    "nome": "(VAREJO) 360 Mbps",
+                    "valor": 89.9,
+                    "status": "Suspenso por Débito",
+                    "status_prefixo": "suspenso_debito",
+                    "endereco_cadastral": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_instalacao": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": -6.77372,
+                            "longitude": -43.008635
+                        }
+                    },
+                    "endereco_fiscal": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    },
+                    "endereco_cobranca": {
+                        "completo": "RUA JOAO ANTONIO DE CARVALHO, 106(POR TRAS DO JORGE BATISTA 1) - SAMBAIBA NOVA, FLORIANO/PI | CEP: 64804-300",
+                        "endereco": "RUA JOAO ANTONIO DE CARVALHO",
+                        "numero": "106",
+                        "complemento": null,
+                        "referencia": "POR TRAS DO JORGE BATISTA 1",
+                        "bairro": "SAMBAIBA NOVA",
+                        "cep": "64804300",
+                        "estado": "PI",
+                        "uf": "PIAUÍ",
+                        "cidade": "FLORIANO",
+                        "pais": "Brasil",
+                        "coordenadas": {
+                            "latitude": null,
+                            "longitude": null
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
