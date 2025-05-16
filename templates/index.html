@@ -452,6 +452,55 @@
             // Não impedir o envio do formulário
             return true;
         });
+
+        // Melhorar o download do CSV
+        document.addEventListener('DOMContentLoaded', function() {
+            // Encontrar links de download CSV
+            const downloadLinks = document.querySelectorAll('a[href*="download-ultimo-csv"]');
+            
+            downloadLinks.forEach(link => {
+                // Adicionar timestamp para evitar caching
+                link.addEventListener('click', function(e) {
+                    // Verificar se o arquivo CSV está disponível antes de prosseguir
+                    e.preventDefault();
+                    
+                    const originalHref = link.getAttribute('href');
+                    const clickTime = new Date().getTime();
+                    const novoHref = `${originalHref}?t=${clickTime}`;
+                    
+                    // Mostrar indicador de carregamento
+                    const downloadText = link.textContent;
+                    link.textContent = "Preparando download...";
+                    link.classList.add('disabled');
+                    
+                    // Verificar se o arquivo está disponível
+                    fetch(novoHref, { method: 'HEAD' })
+                        .then(response => {
+                            if (response.ok) {
+                                // Arquivo existe, iniciar download
+                                console.log("Arquivo CSV encontrado, iniciando download...");
+                                window.location.href = novoHref;
+                            } else {
+                                // Arquivo não existe
+                                console.error("Arquivo CSV não encontrado");
+                                alert("O arquivo CSV não está disponível. Por favor, tente processar novamente.");
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Erro ao verificar arquivo:", error);
+                            // Tentar download direto em caso de erro na verificação
+                            window.location.href = novoHref;
+                        })
+                        .finally(() => {
+                            // Restaurar texto original
+                            setTimeout(() => {
+                                link.textContent = downloadText;
+                                link.classList.remove('disabled');
+                            }, 2000);
+                        });
+                });
+            });
+        });
     </script>
 </body>
 </html> 
